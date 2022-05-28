@@ -11,7 +11,6 @@ const data = [
     ["/typescript", "TypeScript"],
     ["/react", "React"],
     ["/webpack", "Webpack"],
-    ["/mysql", "MySQL"],
     ["/computer-network", "计算机网络"],
     ["/data-structure&algorithm", "数据结构与算法"],
     ["/interview", "面经"],

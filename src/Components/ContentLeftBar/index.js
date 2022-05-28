@@ -7,7 +7,6 @@ import DSALeftBar from "../../Pages/DSALeftBar"
 import ReactLeftBar from "../../Pages/ReactLeftBar"
 import InterLeftBar from "../../Pages/InterLeftBar"
 import TSLeftBar from "../../Pages/TSLeftBar"
-import MySQLLeftBar from "../../Pages/MySQLLeftBar"
 import WebpackLeftBar from "../../Pages/WebpackLeftBar"
 import ComputerNetworkLeftBar from '../../Pages/ComputerNetworkLeftBar'
 import './index.css'
@@ -27,7 +26,6 @@ export default class ContentLeftBar extends Component {
                     <Route path="/dva/*" element={<ReactLeftBar/>}/>
                     <Route path="/interview/*" element={<InterLeftBar/>}/>
                     <Route path="/typescript/*" element={<TSLeftBar/>}/>
-                    <Route path="/mysql/*" element={<MySQLLeftBar/>}/>
                     <Route path="/computer-network/*" element={<ComputerNetworkLeftBar/>}/>
                 </Routes>
             </div>

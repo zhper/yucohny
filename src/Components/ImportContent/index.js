@@ -79,15 +79,6 @@ import inter1 from '../../note/面经/2021-12-29字节懂车帝一面.md'
 import inter2 from '../../note/面经/2022-1-13阿里朝扬计划蚂蚁技术体验部笔试.md'
 import inter3 from '../../note/面经/2022-1-17阿里朝扬计划蚂蚁技术体验部一面.md'
 import inter4 from '../../note/面经/2022-2-12微软ExploreProgram笔试.md'
-import mysql_basic from '../../note/MySQL/1-SQL基础.md'
-import mysql_ddl from '../../note/MySQL/2-SQL-DDL.md'
-import mysql_dml from '../../note/MySQL/3-SQL-DML.md'
-import mysql_dql from '../../note/MySQL/4-SQL-DQL.md'
-import mysql_dcl from '../../note/MySQL/5-SQL-DCL.md'
-import mysql_func from '../../note/MySQL/6-SQL-函数.md'
-import mysql_cons from '../../note/MySQL/7-SQL-约束.md'
-import mysql_multi_table_query from '../../note/MySQL/8-SQL-多表查询.md'
-import mysql_transaction from '../../note/MySQL/9-SQL-事务.md'
 import wp_install_basic from "../../note/Webpack/0.安装 Webpack 与简单使用.md";
 import wp_config from "../../note/Webpack/1.自定义Webpack配置.md";
 import wp_asset from "../../note/Webpack/2.资源模块.md";
@@ -197,18 +188,6 @@ const dsa_data = [
     ["bst", dsa_bst],
 ]
 
-const mysql_data = [
-    ["sql-basic", mysql_basic],
-    ["sql-ddl", mysql_ddl],
-    ["sql-dml", mysql_dml],
-    ["sql-dql", mysql_dql],
-    ["sql-dcl", mysql_dcl],
-    ["function", mysql_func],
-    ["constraint", mysql_cons],
-    ["multi-table-query", mysql_multi_table_query],
-    ["transaction", mysql_transaction]
-]
-
 const inter_data = [
     ["1", inter1],
     ["2", inter2],
@@ -239,5 +218,5 @@ const computer_network_data = [
 ]
 
 export default {
-    css_data, dsa_data, react_data, webpack_data, inter_data, mysql_data, ts_data, js_data, computer_network_data
+    css_data, dsa_data, react_data, webpack_data, inter_data, ts_data, js_data, computer_network_data
 }
