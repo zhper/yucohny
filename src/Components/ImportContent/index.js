@@ -217,6 +217,8 @@ const computer_network_data = [
     ["cors", cn_cors]
 ]
 
-export default {
+const data = {
     css_data, dsa_data, react_data, webpack_data, inter_data, ts_data, js_data, computer_network_data
 }
+
+export default data
