@@ -4,10 +4,6 @@ Asynchronous Javascript And XML，即异步 JS 和 XML。
 
 AJAX 是一种用于创建快速动态网页的技术，通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。不使用 AJAX 的传统网页如果需要更新内容，必须重载整个页面。
 
-## 工作原理
-
-![img-1](./img/1.png)
-
 # AJAX 是基于现有的 Internet 标准
 
 AJAX 是基于现有的 Internet 标准，并且联合使用它们：
@@ -41,8 +37,6 @@ variable = new XMLHttpRequest();
 
 如果需要将请求发送到服务器，我们将使用 XMLHttpRequest 对象的 opne() 和 send() 方法：
 
-![img-2](./img/2.png)
-
 ## GET 还是 POST
 
 与 POST 相比，GET 更简单也更快，并且在大部分情况下都能用。但是在下列情况，POST 请求更优秀：
@@ -59,7 +53,6 @@ variable = new XMLHttpRequest();
 xmlhttp.open("GET", "/try/ajax/demo_get.php", true);
 xmlhttp.send();
 ```
-
 
 在上面的例子中，可能得到的是缓存的结果。
 
@@ -92,8 +85,6 @@ xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 xmlhttp.send("fname=Henry&lname=Ford");
 ```
 
-![img-3](./img/3.png)
-
 # 服务器响应
 
 如果需要获得来自服务器的响应，需要使用 XMLHttpRequest 对象的 responseTest 或者 responseXML 属性：
@@ -123,8 +114,6 @@ for (let i = 0; i < x.length; i++) {
 document.getElementById("myDiv").innerHTML = txt;
 ```
 
-
-
 # onreadystatechange 事件
 
 ## onreadystatechange 事件
@@ -135,11 +124,7 @@ document.getElementById("myDiv").innerHTML = txt;
 
 readyState 属性存有 XMLHttpRequest 的状态信息。
 
-下面是 XMLHttpRequest 对象的三个重要的属性：
-
-![img-4](./img/4.png)
-
-使用如下：
+基本使用如下：
 
 ```js
 xmlhttp.onreadystatechange = function() {
