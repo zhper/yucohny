@@ -5,13 +5,12 @@ import MyMarkdownTitle from "../MyMarkdownTitle";
 import hc_readme from '../../note/CSS/README.md'
 import js_readme from '../../note/JavaScript/README.md'
 import r_readme from '../../note/React/README.md'
-import dsa_readme from '../../note/数据结构与算法/README.md'
 import ts_readme from '../../note/TypeScript/README.md'
 import wp_readme from '../../note/Webpack/README.md'
 import cn_readme from '../../note/计算机网络/README.md'
 import ImportContent from '../ImportContent'
 
-const {css_data, js_data, ts_data, inter_data, webpack_data, react_data, dsa_data, computer_network_data} = ImportContent
+const {css_data, js_data, ts_data, inter_data, webpack_data, react_data, computer_network_data} = ImportContent
 
 export default class ContentRightBar extends Component {
     render() {
@@ -58,16 +57,7 @@ export default class ContentRightBar extends Component {
                             })
                         }
                     </Route>
-                    <Route path="/data-structure&algorithm">
-                        <Route index element={<MyMarkdownTitle markdown={dsa_readme}/>}/>
-                        {
-                            dsa_data.map(item => {
-                                return <Route key={item[0] === undefined ? "1" : item[0]} path={"/data-structure&algorithm/" + item[0]} element={<MyMarkdownTitle markdown={item[1]}/>}/>
-                            })
-                        }
-                    </Route>
                     <Route path="/interview">
-                        {/*<Route index element={<MyMarkdownTitle markdown={inter1}/>}/>*/}
                         {
                             inter_data.map(item => {
                                 return <Route key={item[0] === undefined ? "1" : item[0]} path={"/interview/" + item[0]} element={<MyMarkdownTitle markdown={item[1]}/>}/>

@@ -3,7 +3,6 @@ import {Route, Routes} from "react-router-dom"
 import JSLeftBar from "../../Pages/JSLeftBar"
 import IntroductionLeftBar from "../../Pages/IntroductionLeftBar"
 import HCLeftBar from "../../Pages/HCLeftBar"
-import DSALeftBar from "../../Pages/DSALeftBar"
 import ReactLeftBar from "../../Pages/ReactLeftBar"
 import InterLeftBar from "../../Pages/InterLeftBar"
 import TSLeftBar from "../../Pages/TSLeftBar"
@@ -21,7 +20,6 @@ export default class ContentLeftBar extends Component {
                     <Route path="/javascript/*" element={<JSLeftBar/>}/>
                     <Route path="/htmlcss/*" element={<HCLeftBar/>}/>
                     <Route path="/webpack/*" element={<WebpackLeftBar/>}/>
-                    <Route path="/data-structure&algorithm/*" element={<DSALeftBar/>}/>
                     <Route path="/react/*" element={<ReactLeftBar/>}/>
                     <Route path="/dva/*" element={<ReactLeftBar/>}/>
                     <Route path="/interview/*" element={<InterLeftBar/>}/>

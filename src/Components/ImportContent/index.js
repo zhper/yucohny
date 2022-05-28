@@ -64,11 +64,6 @@ import r_hook from '../../note/React/React进阶/17-Hook.md'
 import r_router from '../../note/React/React进阶：React-Router/route.md'
 import r_redux from '../../note/React/React进阶：Redux&React-Redux/1-Redux.md'
 import r_redux2 from '../../note/React/React进阶：Redux&React-Redux/2-React-Redux.md'
-import dsa_sql from '../../note/数据结构与算法/栈队列链表.md'
-import dsa_sort from '../../note/数据结构与算法/各种排序算法.md'
-import dsa_heap from '../../note/数据结构与算法/堆.md'
-import dsa_ufds from '../../note/数据结构与算法/并查集.md'
-import dsa_bst from '../../note/数据结构与算法/二叉搜索树.md'
 import ts_env from "../../note/TypeScript/开发环境搭建.md";
 import ts_type from "../../note/TypeScript/类型.md";
 import ts_var from "../../note/TypeScript/变量声明.md";
@@ -180,14 +175,6 @@ const react_data = [
     ["react-redux", r_redux2]
 ]
 
-const dsa_data = [
-    ["stack-queue-list", dsa_sql],
-    ["sort", dsa_sort],
-    ["heap", dsa_heap],
-    ["union-find-disjoint-sets", dsa_ufds],
-    ["bst", dsa_bst],
-]
-
 const inter_data = [
     ["1", inter1],
     ["2", inter2],
@@ -218,7 +205,7 @@ const computer_network_data = [
 ]
 
 const data = {
-    css_data, dsa_data, react_data, webpack_data, inter_data, ts_data, js_data, computer_network_data
+    css_data, react_data, webpack_data, inter_data, ts_data, js_data, computer_network_data
 }
 
 export default data
