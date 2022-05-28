@@ -107,6 +107,30 @@ process.on('unhandledRejection', function (error, p) {
 
 注意：如果作为参数的 `Promise` 实例自身定义了 `catch` 方法，那么它被 `rejected` 时并不会触发 `Promise.all()` 的 `catch` 方法。
 
+因此，结合 `Promise.all()` 的含义，我们可以手写出一个 `PromiseAll()` 方法：
+
+```js
+const PromiseAll = (iterator) => {
+    const promises = Array.from(iterator)
+    let index = 0
+    let data = []
+    return new Promise((resolve, reject) => {
+        for (let i in promises) {
+            promises[i]
+                .then((res) => {
+                    data[i] = res;
+                    if (++index === promises.length) {
+                        resolve(data);
+                    }
+                })
+                .catch((err) => {
+                    reject(err);
+                })
+        }
+    })
+}
+```
+
 # Promise.race()
 
 `Promise.race()` 方法同样是将多个 `Promise` 实例包装成一个新的 `Promise` 实例。（参数与 `Promise.all()` 相同处理。）
