@@ -1,10 +1,8 @@
 ## 欢迎来到「一名前端攻城师的个人修养」
 
-[![GitHub watchers](https://img.shields.io/github/watchers/yucohny/yucohny.github.io)](https://github.com/yucohny/yucohny.github.io)[![GitHub stars](https://img.shields.io/github/stars/yucohny/yucohny.github.io)](https://github.com/Yucohny/yucohny.github.io)
+[![GitHub watchers](https://img.shields.io/github/watchers/yucohny/yucohny)](https://github.com/yucohny/yucohny.github.io)[![GitHub stars](https://img.shields.io/github/stars/yucohny/yucohny)](https://github.com/Yucohny/yucohny)
 
 本网站旨在不断学习过程中，完善前端入门相关的知识笔记，同时展现笔者自己的一些笔试与面试经历。
-
-受到 [Mock](http://mockjs.com/) 描述的启发，命名为「前端攻城师」。
 
 ## 关于本网站
 
@@ -12,11 +10,11 @@
 
 最初想要基于 Hexo 搭建，但是稍觉繁琐，许多配置以及主题样式更改又要再加学习。虽有学习之力，但无学习之心，故最终决定自己从零开始搭建这个网页。
 
-搭建思路很简单，既然是基于 Github Pages 搭建，那自然就是一个简单的静态页面，将 React 静态项目打包后上传即可。
+最开始是将 React 项目打包后上传到 Github Pages，后来觉得每次手动打包稍显麻烦，便尝试了一下 Github Actions、Netlify 和 Vercel。Github Actions 与 Netlify 不知道为什么一直部署失败，最终成功部署在了 Vercel 上面。
 
-故直接使用 `create-react-app` 创建脚手架，然后基于 `React-Router v6` 配置路由，再使用 Ant Design 搭配组件，最后基于 `React-Markdown` 第三方库渲染 markdown 文件。
+项目直接使用 `create-react-app` 创建脚手架，然后基于 `React-Router v6` 配置路由，再使用 Ant Design 搭配组件，最后基于 `React-Markdown` 第三方库渲染 markdown 文件。
 
-本项目尚且称之为一个 React 项目的实践，但是内容单薄，且又只是简单的静态页面，因此网站大体框架实际花费的开发时间约莫也就是一两天。不过后续在慢慢修改一些基本样式。
+本项目尚且称之为一个 React 项目的实践，但是内容单薄，且又只是简单的静态页面，因此网站大体框架实际花费的开发时间约莫也就是一两天。不过后续再慢慢修改一些样式。
 
 ## Doing
 
